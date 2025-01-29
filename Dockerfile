@@ -12,7 +12,8 @@ RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 # Copy configration file
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Generate a password file
-RUN htpasswd -bc /etc/nginx/htpasswd public heron
+# Generate password files
+RUN htpasswd -bc /etc/nginx/htpasswd-heron public heron
+RUN htpasswd -bc /etc/nginx/htpasswd-eagle public eagle
 
 EXPOSE 8080
