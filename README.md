@@ -17,6 +17,12 @@ in responses to avoid bypassing authentication when downloading files. Requests 
 
 The username is `public` and the password is `heron` and can be provided in the URL e.g. `https://public:heron@pypi-proxy.fly.dev/basic-auth`.
 
+### Multiple passwords
+
+For testing multiple indexes with separate credentials on a single realm, there are authenticated
+proxies at `https://pypi-proxy.fly.dev/basic-auth-heron/` and
+`https://pypi-proxy.fly.dev/basic-auth-eagle/` with the respective name as a password.
+
 ## Contributing
 
 Build and run the image:
